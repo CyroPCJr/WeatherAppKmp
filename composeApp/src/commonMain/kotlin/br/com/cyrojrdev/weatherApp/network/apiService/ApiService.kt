@@ -9,12 +9,12 @@ import io.ktor.client.request.parameter
 class ApiService(
     val httpClient: HttpClient,
 ) {
-    suspend fun getWeatherData(): Result<WeatherResponse> =
+    suspend fun getWeatherDataByCity(city: String): Result<WeatherResponse> =
         try {
             val response = httpClient
-                .get("api/weather") {
+                .get("api/weather/by-city") {
                     url {
-                        parameter("city", "London")
+                        parameter("city", city)
                     }
                 }.body<WeatherResponse>()
             Result.success(response)

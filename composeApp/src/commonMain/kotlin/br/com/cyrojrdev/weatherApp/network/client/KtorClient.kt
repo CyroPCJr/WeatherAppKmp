@@ -12,7 +12,7 @@ import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
 
 object KtorClient {
-    fun getInstance(): HttpClient =
+    private val client: HttpClient by lazy {
         HttpClient {
             install(ContentNegotiation) {
                 json(
@@ -24,7 +24,7 @@ object KtorClient {
 
             install(DefaultRequest) {
                 url {
-                    host = "https://weather-api-latest.onrender.com/"
+                    host = "weather-api-latest.onrender.com/"
                     protocol = URLProtocol.HTTPS
                     contentType(ContentType.Application.Json)
                     accept(ContentType.Application.Json)
@@ -37,4 +37,7 @@ object KtorClient {
                 requestTimeoutMillis = 3000
             }
         }
+    }
+
+    fun getInstance(): HttpClient = client
 }
