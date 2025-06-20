@@ -1,4 +1,4 @@
-package br.com.cyrojrdev.ui.screen.components
+package br.com.cyrojrdev.weatherApp.presentation.ui.screen.components
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.runtime.Composable

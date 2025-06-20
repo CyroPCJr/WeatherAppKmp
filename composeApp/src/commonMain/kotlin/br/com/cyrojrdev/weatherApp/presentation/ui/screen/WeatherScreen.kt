@@ -1,4 +1,4 @@
-package br.com.cyrojrdev.ui.screen
+package br.com.cyrojrdev.weatherApp.presentation.ui.screen
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -7,8 +7,8 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import br.com.cyrojrdev.ui.screen.components.WeatherAppTopBar
-import br.com.cyrojrdev.ui.theme.WeatherAppTheme
+import br.com.cyrojrdev.weatherApp.presentation.ui.screen.components.WeatherAppTopBar
+import br.com.cyrojrdev.weatherApp.presentation.ui.theme.WeatherAppTheme
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @OptIn(ExperimentalMaterial3Api::class)
