@@ -1,4 +1,4 @@
-package br.com.cyrojrdev.ui.theme
+package br.com.cyrojrdev.weatherApp.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -1,7 +1,7 @@
 package br.com.cyrojrdev
 
 import androidx.compose.runtime.Composable
-import br.com.cyrojrdev.ui.screen.WeatherScreen
+import br.com.cyrojrdev.weatherApp.presentation.ui.screen.WeatherScreen
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Composable
