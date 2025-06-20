@@ -8,6 +8,7 @@ plugins {
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.composeHotReload)
+    alias(libs.plugins.kotlinx.serialization)
 }
 
 kotlin {
@@ -65,6 +66,9 @@ kotlin {
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
+            implementation(libs.kotlin.coroutine.test)
+            implementation(libs.koin.test)
+            implementation(libs.ktor.client.mock)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
